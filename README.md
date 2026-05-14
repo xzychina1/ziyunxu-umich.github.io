@@ -1,19 +1,17 @@
 # Northstar Studio
 
-This workspace contains a static personal website for a portfolio/resume assignment.
+This workspace contains a minimal personal website with a blank home page and two blank child pages.
 
 ## Pages
 
-- About: `index.html`
-- Resume: `resume.html`
-- Portfolio: `projects.html`
-- Project case studies: `projects/aurora.html`, `projects/atelier.html`, `projects/atlas.html`
+- Home: `index.html`
+- Publications: `publications/index.html`
+- CV: `cv/index.html`
 
 ## Notes
 
 - The site is written in plain HTML, CSS, and JavaScript so it can be published for free on any static host.
-- The domain shown in the site is a placeholder: `ziyunxu-umich.github.io`.
-- The avatar and screenshot graphics are SVG placeholders and can be replaced later with real images.
+- The current setup uses page paths for Publications and CV. Real subdomains need DNS plus separate hosting targets.
 
 ## Open locally
 
@@ -30,7 +28,5 @@ This workspace is ready for GitHub Pages.
 
 ## Design choices
 
-- English content
-- Native resume layout inside the site
-- Three featured projects with screenshots and case-study pages
-- Consistent dark editorial color system and narrow readable text columns
+- Blank home page
+- Publications and CV child pages are intentionally blank

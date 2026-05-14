@@ -3,7 +3,8 @@
   const navLinks = document.querySelectorAll(".site-nav a");
 
   navLinks.forEach((link) => {
-    const linkPath = new URL(link.getAttribute("href"), window.location.href).pathname
+    const linkUrl = new URL(link.getAttribute("href"), window.location.href);
+    const linkPath = linkUrl.pathname
       .replace(/\\/g, "/")
       .toLowerCase();
 

@@ -3,104 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Northstar Studio is a personal website with an about page, a native resume, and a curated portfolio of projects."
-    />
-    <title>Northstar Studio | About</title>
+    <meta name="description" content="Ziyun Xu GitHub-style profile page." />
+    <title>Ziyun Xu | Home</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">NS</span>
-          <span>
-            <strong>Northstar Studio</strong>
-            <small>ziyunxu-umich.github.io</small>
-          </span>
-        </a>
+        <div class="brand">
+          <strong>Ziyun Xu</strong>
+          <span>ziyunxu-umich.github.io</span>
+        </div>
         <nav class="site-nav" aria-label="Primary">
-          <a href="index.html" data-page="home">About</a>
-          <a href="resume.html" data-page="resume">Resume</a>
-          <a href="projects.html" data-page="projects">Portfolio</a>
-          <a href="projects/aurora.html" data-page="aurora">Aurora</a>
-          <a href="projects/atelier.html" data-page="atelier">Atelier</a>
-          <a href="projects/atlas.html" data-page="atlas">Atlas</a>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="portfolio/index.html">Portfolio</a>
+          <a href="publications/index.html">Publications</a>
+          <a href="cv/index.html">CV</a>
         </nav>
       </header>
 
-      <main>
-        <section class="hero card">
-          <div class="hero-copy">
-            <p class="eyebrow">About me</p>
-            <h1>Designing simple products that feel calm, clear, and useful.</h1>
-            <p class="lede">
-              I am a detail-oriented student and builder who enjoys turning fuzzy ideas into
-              clean interfaces, structured writing, and practical digital tools. My work mixes
-              product thinking, visual design, and front-end development.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="projects.html">View portfolio</a>
-              <a class="button button-secondary" href="resume.html">Read resume</a>
-            </div>
+      <main class="profile-layout">
+        <aside class="profile-card">
+          <div class="profile-avatar">
+            <img src="微信图片_20260513203422_10_657.jpg" alt="Ziyun Xu profile photo" />
           </div>
-          <figure class="profile-card">
-            <img src="assets/avatar.svg" alt="Abstract avatar illustration" />
-            <figcaption>
-              A simple avatar placeholder you can replace with your own photo or a custom illustration.
-            </figcaption>
-          </figure>
-        </section>
+          <div class="profile-summary">
+            <h1>Ziyun Xu</h1>
+            <p class="profile-role">CSE</p>
+            <p>undergraduate student at University of Michigan.</p>
+          </div>
+        </aside>
 
-        <section class="content-grid">
-          <article class="card narrow-copy">
-            <p class="eyebrow">Professional focus</p>
-            <h2>What I like working on</h2>
-            <p>
-              I am most engaged by projects where structure matters: portfolios, dashboards,
-              editorial layouts, and applications with a strong information hierarchy. I care about
-              readable typography, accessible navigation, and the details that make a site feel
-              deliberate rather than generic.
-            </p>
-          </article>
-          <article class="card narrow-copy">
-            <p class="eyebrow">Personal interests</p>
-            <h2>How I recharge</h2>
-            <p>
-              Outside of class and project work, I enjoy taking photos of city streets, reading
-              design case studies, and sketching interface ideas in notebooks. I also like music,
-              good coffee, and the process of refining a concept until it becomes understandable at
-              a glance.
-            </p>
-          </article>
-        </section>
-
-        <section class="card narrow-copy feature-band">
-          <p class="eyebrow">Website plan</p>
-          <h2>What this site includes</h2>
-          <div class="split-list">
-            <div>
-              <h3>About</h3>
-              <p>Professional summary, interests, and a concise introduction.</p>
-            </div>
-            <div>
-              <h3>Resume</h3>
-              <p>A native CV layout with skills, education, experience, and project links.</p>
-            </div>
-            <div>
-              <h3>Portfolio</h3>
-              <p>Three featured projects with screenshots, descriptions, and role summaries.</p>
-            </div>
+        <section class="profile-details" aria-label="Profile details">
+          <div class="profile-row">
+            <span>Location</span>
+            <span>Ann Arbor, MI</span>
+          </div>
+          <div class="profile-row">
+            <span>School</span>
+            <span>University of Michigan</span>
+          </div>
+          <div class="profile-row">
+            <span>Email</span>
+            <a href="mailto:ziyunxu@umich.edu">ziyunxu@umich.edu</a>
+          </div>
+          <div class="profile-row">
+            <span>Github</span>
+            <a href="https://github.com/xzychina1" target="_blank" rel="noreferrer">
+              github.com/xzychina1
+            </a>
           </div>
         </section>
+
+        <section class="about-box" aria-label="About me">
+          <h2>About Me</h2>
+          <p>
+            I am especially interested in compiler systems and functional programming languages.
+            My current focus is on language design, type systems, and implementation work in the
+            direction of the Zydeco project. I enjoy building tools that make formal ideas more
+            practical for everyday programming.
+          </p>
+        </section>
+
       </main>
-
-      <footer class="site-footer">
-        <p>Suggested domain: ziyunxu-umich.github.io</p>
-        <p>Built as a lightweight static site for free publishing.</p>
-      </footer>
     </div>
   </body>
 </html>
